@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "栈查查",
+  "version": "0.1",
+  "description": "分析并展示 GitHub 仓库的技术栈",
+  "permissions": ["storage"],
+  "host_permissions": ["https://github.com/*", "https://raw.githubusercontent.com/*"],
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["dist/content.js"]
+    }
+  ],
+  "web_accessible_resources": [],
+  "action": {
+    "default_popup": "dist/popup.html",
+    "default_title": "栈查查",
+    "default_icon": {
+      "16": "src/icons/icon.png",
+      "32": "src/icons/icon.png",
+      "48": "src/icons/icon.png",
+      "128": "src/icons/icon.png"
+    }
+  },
+  "icons": {
+    "16": "src/icons/icon.png",
+    "32": "src/icons/icon.png",
+    "48": "src/icons/icon.png",
+    "128": "src/icons/icon.png"
+  }
+}

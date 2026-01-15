@@ -1,0 +1,41 @@
+{
+  "name": "zhan-stack",
+  "version": "0.1",
+  "description": "Chrome extension to analyze technology stacks of GitHub repositories",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "wxt build",
+    "dev": "wxt dev --browser=chrome",
+    "dev:firefox": "wxt dev --browser=firefox",
+    "zip": "wxt zip",
+    "lint": "biome lint .",
+    "format": "biome format . --write",
+    "check": "biome check .",
+    "gen:icon": "node scripts/process-icon.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "chrome-extension",
+    "github",
+    "tech-stack",
+    "analyzer"
+  ],
+  "author": "squirrel",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "@types/chrome": "^0.1.33",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "sharp": "^0.34.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "wxt": "^0.20.13"
+  }
+}

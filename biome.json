@@ -1,0 +1,69 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "src/**",
+      "wxt.config.ts",
+      "package.json",
+      "tsconfig.json",
+      "biome.json",
+      "manifest.json"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "attributePosition": "auto"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "warn"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "warn"
+      },
+      "style": {
+        "useImportType": "error",
+        "noNonNullAssertion": "off"
+      },
+      "a11y": {
+        "noStaticElementInteractions": "off",
+        "useValidAnchor": "off",
+        "useKeyWithClickEvents": "off",
+        "useAltText": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "preserve",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always"
+    },
+    "globals": ["chrome", "browser", "content", "window", "document"]
+  },
+  "overrides": [
+    {
+      "includes": ["src/entrypoints/**/*.tsx", "src/entrypoints/**/*.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
+}
