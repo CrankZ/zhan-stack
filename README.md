@@ -24,7 +24,7 @@ Chrome Web Store: https://chromewebstore.google.com/detail/kebfbpfgnkegkhmfkkbhg
 
 ### 手动安装
 
-前往 [Releases](https://gitee.com/CrankZ/zhan-stack/releases) 页面，下载最新版本的安装包：
+前往 [Releases](https://github.com/CrankZ/zhan-stack/releases) 页面，下载最新版本的安装包：
 - **`.crx` 文件**：适用于 Chrome 浏览器的标准安装包。
 - **`.zip` 压缩包**：适用于手动加载的源码包。
 
