@@ -20,7 +20,7 @@
 
 ## 📦 安装
 
-Chrome Web Store
+Chrome Web Store: https://chromewebstore.google.com/detail/kebfbpfgnkegkhmfkkbhgidkjghbleco
 
 ### 手动安装
 
